@@ -1,5 +1,7 @@
-name: helloworld # 这是你的插件的唯一识别名。
-desc: 这是 AstrBot 的默认插件，支持关键词回复。 # 插件简短描述
-version: v1.3 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+name: linbot
+author: YourName
+desc: LinBot - AstrBot 游戏系统插件，集成外部插件帮助中心、服务器监控和完整经济游戏系统（含PVP抢劫与失败惩罚机制）
+version: 1.6.1
+repo: https://github.com/yourusername/astrbot_plugin_linbot
+icon: https://example.com/icon.png
+entry: main.py

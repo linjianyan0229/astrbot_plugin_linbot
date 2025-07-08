@@ -1,0 +1,128 @@
+{
+  "display_settings": {
+    "description": "显示设置",
+    "type": "object",
+    "items": {
+      "max_commands_per_row": {
+        "description": "每行最多显示指令数",
+        "type": "int",
+        "default": 4,
+        "hint": "控制帮助页面每行最多显示多少个指令按钮（1-6）"
+      },
+      "show_plugin_logos": {
+        "description": "显示插件头像",
+        "type": "bool",
+        "default": true,
+        "hint": "是否在帮助页面显示插件的头像图标"
+      }
+    }
+  },
+  "server_monitor_settings": {
+    "description": "服务器监控设置",
+    "type": "object",
+    "items": {
+      "enable_monitor": {
+        "description": "启用服务器监控",
+        "type": "bool",
+        "default": true,
+        "hint": "是否启用服务器监控功能"
+      },
+      "monitor_interval": {
+        "description": "监控间隔(秒)",
+        "type": "int",
+        "default": 1,
+        "hint": "CPU图表监控的数据收集间隔（1-10秒）"
+      },
+      "chart_duration": {
+        "description": "图表时长(秒)",
+        "type": "int",
+        "default": 30,
+        "hint": "CPU使用率图表显示的时间长度（10-120秒）"
+      }
+    }
+  },
+  "game_system_settings": {
+    "description": "游戏系统设置",
+    "type": "object",
+    "items": {
+      "work_cooldown_multiplier": {
+        "description": "打工冷却时间倍数",
+        "type": "float",
+        "default": 1.0,
+        "hint": "打工冷却时间的倍数（0.1-5.0），数值越小冷却越快"
+      },
+      "bank_interest_rate": {
+        "description": "银行基础利息率(%)",
+        "type": "float",
+        "default": 0.1,
+        "hint": "银行存款的基础日利息率（0.01-1.0%）"
+      },
+      "bank_vip_interest_rate": {
+        "description": "VIP用户利息率(%)",
+        "type": "float",
+        "default": 0.15,
+        "hint": "VIP用户的日利息率（0.01-2.0%）"
+      },
+      "vip_threshold": {
+        "description": "VIP门槛金额",
+        "type": "int",
+        "default": 10000,
+        "hint": "成为VIP用户需要的银行存款金额（1000-100000）"
+      },
+      "daily_work_limit": {
+        "description": "每日打工次数限制",
+        "type": "int",
+        "default": 10,
+        "hint": "每日最多可以打工的次数（1-50）"
+      },
+      "work_experience_multiplier": {
+        "description": "打工经验倍数",
+        "type": "float",
+        "default": 1.0,
+        "hint": "打工获得经验的倍数（0.1-5.0）"
+      },
+      "robbery_success_rate": {
+        "description": "抢劫成功率(%)",
+        "type": "float",
+        "default": 30.0,
+        "hint": "抢劫成功的概率（10.0-80.0%）"
+      },
+      "robbery_min_amount": {
+        "description": "抢劫最小金额",
+        "type": "int",
+        "default": 50,
+        "hint": "单次抢劫获得的最小金额（10-500）"
+      },
+      "robbery_max_amount": {
+        "description": "抢劫最大金额",
+        "type": "int",
+        "default": 300,
+        "hint": "单次抢劫获得的最大金额（100-2000）"
+      },
+      "robbery_cooldown_hours": {
+        "description": "抢劫冷却时间(小时)",
+        "type": "float",
+        "default": 6.0,
+        "hint": "抢劫操作的冷却时间（1.0-24.0小时）"
+      },
+      "robbery_level_requirement": {
+        "description": "抢劫等级要求",
+        "type": "int",
+        "default": 5,
+        "hint": "进行抢劫需要的最低等级（1-20）"
+      },
+      "robbery_protection_amount": {
+        "description": "抢劫保护金额",
+        "type": "int",
+        "default": 100,
+        "hint": "现金低于此金额时不能被抢劫（0-1000）"
+      },
+      "robbery_failure_penalty": {
+        "description": "抢劫失败惩罚金额",
+        "type": "int",
+        "default": 20,
+        "hint": "抢劫失败时扣除的金额（0-200）"
+      }
+    }
+  }
+} 
